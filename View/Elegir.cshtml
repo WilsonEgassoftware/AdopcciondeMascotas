@@ -1,0 +1,11 @@
+<h2>Elige tu mascota</h2>
+<form method="post">
+    @foreach (var mascota in Model)
+    {
+        <div>
+            <input type="radio" name="id" value="@mascota.Id" required />
+            @mascota.Nombre (@mascota.Tipo)
+        </div>
+    }
+    <button type="submit">Confirmar</button>
+</form>
