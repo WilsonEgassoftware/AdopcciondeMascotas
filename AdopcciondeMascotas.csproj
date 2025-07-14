@@ -63,7 +63,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Remove="Pages\MainPage.xaml" />
 	  <MauiXaml Remove="View\ElegirMascota.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <JavaDocJar Include="Pages\MainPage.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
