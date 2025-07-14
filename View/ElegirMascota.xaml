@@ -1,0 +1,13 @@
+<VerticalStackLayout Padding="20">
+    <Label Text="Elige tu mascota" FontSize="24" />
+    <CollectionView x:Name="mascotasList" SelectionMode="Single" SelectionChanged="OnSeleccionChanged">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame BorderColor="Gray" Padding="10">
+                    <Label Text="{Binding Nombre}" />
+                    <Label Text="{Binding Tipo}" FontSize="12" />
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</VerticalStackLayout>
