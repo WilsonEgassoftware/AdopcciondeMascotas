@@ -7,8 +7,13 @@ namespace AdopcciondeMascotas.Pages
     {
         public MainPage(MainPageModel model)
         {
-            InitializeComponent();
+            object value = InitializeComponent();
             BindingContext = model;
+        }
+
+        private object InitializeComponent()
+        {
+            throw new NotImplementedException();
         }
     }
 }

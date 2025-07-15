@@ -2,10 +2,11 @@ namespace AdopcciondeMascotas.View;
 
 public partial class ResumenPage : ContentPage
 {
-    private Label _infoLabel; // Rename the field to avoid ambiguity
+    private Label? _infoLabel; // Rename the field to avoid ambiguity
 
     public ResumenPage()
     {
+        
     }
 
     public ResumenPage(Label infoLabel)
